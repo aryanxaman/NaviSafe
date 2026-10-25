@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #18332d;
+  background: #f6f8f4;
+  font-synthesis: none;
+  --ink: #18332d;
+  --muted: #6c7e77;
+  --line: #dce7df;
+  --surface: #ffffff;
+  --green: #147d5a;
+  --green-soft: #e3f3ea;
+  --orange: #d96d35;
+  --blue: #397ca8;
+  --violet: #7465a8;
+  --red: #b84f4f;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #f6f8f4; }
+button, input, textarea, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; }
+.leaflet-container img { max-width: none !important; max-height: none !important; }
+.leaflet-tile-pane, .leaflet-tile { position: absolute; }
+.leaflet-container { font-family: 'Inter', system-ui, sans-serif !important; }

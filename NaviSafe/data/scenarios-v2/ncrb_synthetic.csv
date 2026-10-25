@@ -1,0 +1,26 @@
+city,year,crime_head,section,cases_reported,data_origin
+Delhi (synthetic),2022,Assault on women with intent to outrage modesty,IPC 354,1730,SYNTHETIC
+Delhi (synthetic),2022,Insult to modesty of women,IPC 509,511,SYNTHETIC
+Delhi (synthetic),2022,Stalking,IPC 354D,262,SYNTHETIC
+Delhi (synthetic),2022,Voyeurism,IPC 354C,67,SYNTHETIC
+Delhi (synthetic),2022,Rape,IPC 376,1356,SYNTHETIC
+Delhi (synthetic),2023,Assault on women with intent to outrage modesty,IPC 354,1927,SYNTHETIC
+Delhi (synthetic),2023,Insult to modesty of women,IPC 509,480,SYNTHETIC
+Delhi (synthetic),2023,Stalking,IPC 354D,293,SYNTHETIC
+Delhi (synthetic),2023,Voyeurism,IPC 354C,62,SYNTHETIC
+Delhi (synthetic),2023,Rape,IPC 376,1433,SYNTHETIC
+Delhi (synthetic),2024,Assault on women with intent to outrage modesty,IPC 354,1866,SYNTHETIC
+Delhi (synthetic),2024,Insult to modesty of women,IPC 509,509,SYNTHETIC
+Delhi (synthetic),2024,Stalking,IPC 354D,268,SYNTHETIC
+Delhi (synthetic),2024,Voyeurism,IPC 354C,57,SYNTHETIC
+Delhi (synthetic),2024,Rape,IPC 376,1478,SYNTHETIC
+Delhi (synthetic),2025,Assault on women with intent to outrage modesty,IPC 354,2038,SYNTHETIC
+Delhi (synthetic),2025,Insult to modesty of women,IPC 509,537,SYNTHETIC
+Delhi (synthetic),2025,Stalking,IPC 354D,272,SYNTHETIC
+Delhi (synthetic),2025,Voyeurism,IPC 354C,79,SYNTHETIC
+Delhi (synthetic),2025,Rape,IPC 376,1598,SYNTHETIC
+Delhi (synthetic),2026,Assault on women with intent to outrage modesty,IPC 354,2112,SYNTHETIC
+Delhi (synthetic),2026,Insult to modesty of women,IPC 509,508,SYNTHETIC
+Delhi (synthetic),2026,Stalking,IPC 354D,307,SYNTHETIC
+Delhi (synthetic),2026,Voyeurism,IPC 354C,84,SYNTHETIC
+Delhi (synthetic),2026,Rape,IPC 376,1668,SYNTHETIC

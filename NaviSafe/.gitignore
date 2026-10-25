@@ -1,0 +1,28 @@
+# Environment & Secrets (NEVER upload to GitHub)
+.env
+.env*.local
+
+# Node & Frontend build
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Python cache & tests
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.venv/
+env/
+
+# Local databases & media
+data/*.sqlite3
+data/private_media/
+cache/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

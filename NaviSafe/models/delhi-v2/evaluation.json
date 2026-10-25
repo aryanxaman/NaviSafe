@@ -1,0 +1,535 @@
+{
+  "evaluation_scope": "SYNTHETIC ONLY; no real-world safety validation",
+  "selected_model": "logistic",
+  "selection": "Validation average precision; threshold maximizes validation F2. Test untouched until selection.",
+  "split": "Disjoint chronological 30-day label windows AND disjoint 500m coordinate blocks. Same locations never cross partitions.",
+  "legacy_baseline": "Legacy trainer used in-sample predictions and truth-based spam filtering; no valid held-out metric exists. Prevalence is the honest evaluation baseline.",
+  "snap": {
+    "input": 6120,
+    "retained": 6061,
+    "method": "nearest straight segment, EPSG:32643, <=150 metres"
+  },
+  "validation": {
+    "prevalence_baseline": {
+      "n": 4512,
+      "positives": 44,
+      "precision": 0.00975177304964539,
+      "recall": 1.0,
+      "f1": 0.019315188762071993,
+      "pr_auc_average_precision": 0.00975177304964539,
+      "roc_auc": 0.5,
+      "brier": 0.00966565319393324,
+      "log_loss": 0.055245780400180466,
+      "confusion_matrix_tn_fp_fn_tp": [
+        0,
+        4468,
+        0,
+        44
+      ],
+      "threshold": 0.001,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 4512,
+          "mean_prediction": 0.012747974294495671,
+          "observed_rate": 0.00975177304964539
+        }
+      ]
+    },
+    "logistic": {
+      "n": 4512,
+      "positives": 44,
+      "precision": 0.04395604395604396,
+      "recall": 0.18181818181818182,
+      "f1": 0.07079646017699115,
+      "pr_auc_average_precision": 0.024846963915408343,
+      "roc_auc": 0.6693710832587287,
+      "brier": 0.009666021225115746,
+      "log_loss": 0.05322976104012028,
+      "confusion_matrix_tn_fp_fn_tp": [
+        4294,
+        174,
+        36,
+        8
+      ],
+      "threshold": 0.02512121212121212,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 4502,
+          "mean_prediction": 0.011212906816337982,
+          "observed_rate": 0.009773434029320302
+        },
+        {
+          "lower": 0.1,
+          "count": 8,
+          "mean_prediction": 0.1457295727637618,
+          "observed_rate": 0.0
+        },
+        {
+          "lower": 0.2,
+          "count": 2,
+          "mean_prediction": 0.2092543733997441,
+          "observed_rate": 0.0
+        }
+      ]
+    },
+    "lightgbm": {
+      "n": 4512,
+      "positives": 44,
+      "precision": 0.0241423125794155,
+      "recall": 0.4318181818181818,
+      "f1": 0.0457280385078219,
+      "pr_auc_average_precision": 0.022574709108023883,
+      "roc_auc": 0.7295566452348009,
+      "brier": 0.009643733321303236,
+      "log_loss": 0.052160417595050405,
+      "confusion_matrix_tn_fp_fn_tp": [
+        3700,
+        768,
+        25,
+        19
+      ],
+      "threshold": 0.021101010101010103,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 4509,
+          "mean_prediction": 0.011871574724411799,
+          "observed_rate": 0.009758261255267244
+        },
+        {
+          "lower": 0.1,
+          "count": 3,
+          "mean_prediction": 0.11593245412074878,
+          "observed_rate": 0.0
+        }
+      ]
+    }
+  },
+  "test": {
+    "prevalence_baseline": {
+      "n": 12084,
+      "positives": 214,
+      "precision": 0.01770936775902019,
+      "recall": 1.0,
+      "f1": 0.034802406895430155,
+      "pr_auc_average_precision": 0.01770936775902019,
+      "roc_auc": 0.5,
+      "brier": 0.01742036147770579,
+      "log_loss": 0.08985776011761837,
+      "confusion_matrix_tn_fp_fn_tp": [
+        0,
+        11870,
+        0,
+        214
+      ],
+      "threshold": 0.001,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 12084,
+          "mean_prediction": 0.01274797429449567,
+          "observed_rate": 0.01770936775902019
+        }
+      ]
+    },
+    "logistic": {
+      "n": 12084,
+      "positives": 214,
+      "precision": 0.046296296296296294,
+      "recall": 0.2102803738317757,
+      "f1": 0.07588532883642496,
+      "pr_auc_average_precision": 0.044791836641227406,
+      "roc_auc": 0.6529974253793038,
+      "brier": 0.017243333908158985,
+      "log_loss": 0.0863572950428431,
+      "confusion_matrix_tn_fp_fn_tp": [
+        10943,
+        927,
+        169,
+        45
+      ],
+      "threshold": 0.02512121212121212,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 12057,
+          "mean_prediction": 0.014019115193943004,
+          "observed_rate": 0.017168449863150036
+        },
+        {
+          "lower": 0.1,
+          "count": 22,
+          "mean_prediction": 0.14075649709379337,
+          "observed_rate": 0.2727272727272727
+        },
+        {
+          "lower": 0.2,
+          "count": 5,
+          "mean_prediction": 0.2329970919668513,
+          "observed_rate": 0.2
+        }
+      ]
+    },
+    "lightgbm": {
+      "n": 12084,
+      "positives": 214,
+      "precision": 0.04352637403172261,
+      "recall": 0.5514018691588785,
+      "f1": 0.08068376068376068,
+      "pr_auc_average_precision": 0.055415303093446146,
+      "roc_auc": 0.7292185986819832,
+      "brier": 0.017128424800240922,
+      "log_loss": 0.08325145050669289,
+      "confusion_matrix_tn_fp_fn_tp": [
+        9277,
+        2593,
+        96,
+        118
+      ],
+      "threshold": 0.021101010101010103,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 12067,
+          "mean_prediction": 0.014028748102059013,
+          "observed_rate": 0.017568575453716748
+        },
+        {
+          "lower": 0.1,
+          "count": 15,
+          "mean_prediction": 0.11183985721890251,
+          "observed_rate": 0.13333333333333333
+        },
+        {
+          "lower": 0.2,
+          "count": 2,
+          "mean_prediction": 0.24815784379097655,
+          "observed_rate": 0.0
+        }
+      ]
+    }
+  },
+  "feature_importance": {
+    "length_m": 0.2959470839181948,
+    "lit": 0.1496246169948961,
+    "dist_metro_m": 0.01456104067242763,
+    "dist_police_m": 0.05970894589755093,
+    "isolated": 0.0456666138869479,
+    "shops_open_night": 0.02054743947677078,
+    "liquor_near": 0.002305229594249796,
+    "police_near": 0.1335581004063773,
+    "footfall_day": 0.07955339752960783,
+    "footfall_night": 0.04340757498063489,
+    "bucket": 0.3098728582675435,
+    "prior_90d_count": 0.10729857629872563
+  },
+  "geographic_groups": {
+    "5715_15408": {
+      "n": 360,
+      "positives": 5,
+      "note": "Too few positives for meaningful group metrics."
+    },
+    "5715_15409": {
+      "n": 1308,
+      "positives": 19,
+      "precision": 0.047619047619047616,
+      "recall": 0.05263157894736842,
+      "f1": 0.05,
+      "pr_auc_average_precision": 0.040685555715263506,
+      "roc_auc": 0.6247192846351721,
+      "brier": 0.014261927549360643,
+      "log_loss": 0.07464538478451843,
+      "confusion_matrix_tn_fp_fn_tp": [
+        1269,
+        20,
+        18,
+        1
+      ],
+      "threshold": 0.02512121212121212,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 1308,
+          "mean_prediction": 0.010933805395894478,
+          "observed_rate": 0.01452599388379205
+        }
+      ]
+    },
+    "5716_15404": {
+      "n": 564,
+      "positives": 10,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "pr_auc_average_precision": 0.026784568781678654,
+      "roc_auc": 0.5135379061371841,
+      "brier": 0.01749313582647372,
+      "log_loss": 0.09144377614005315,
+      "confusion_matrix_tn_fp_fn_tp": [
+        527,
+        27,
+        10,
+        0
+      ],
+      "threshold": 0.02512121212121212,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 564,
+          "mean_prediction": 0.013303969661784702,
+          "observed_rate": 0.01773049645390071
+        }
+      ]
+    },
+    "5716_15408": {
+      "n": 468,
+      "positives": 6,
+      "note": "Too few positives for meaningful group metrics."
+    },
+    "5716_15411": {
+      "n": 444,
+      "positives": 5,
+      "note": "Too few positives for meaningful group metrics."
+    },
+    "5717_15405": {
+      "n": 792,
+      "positives": 31,
+      "precision": 0.08552631578947369,
+      "recall": 0.41935483870967744,
+      "f1": 0.14207650273224043,
+      "pr_auc_average_precision": 0.1485747437356532,
+      "roc_auc": 0.6921283540333178,
+      "brier": 0.03647290757261614,
+      "log_loss": 0.1589069357058532,
+      "confusion_matrix_tn_fp_fn_tp": [
+        622,
+        139,
+        18,
+        13
+      ],
+      "threshold": 0.02512121212121212,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 776,
+          "mean_prediction": 0.019161239905941537,
+          "observed_rate": 0.03221649484536082
+        },
+        {
+          "lower": 0.1,
+          "count": 13,
+          "mean_prediction": 0.13656550961868685,
+          "observed_rate": 0.38461538461538464
+        },
+        {
+          "lower": 0.2,
+          "count": 3,
+          "mean_prediction": 0.24255689916704715,
+          "observed_rate": 0.3333333333333333
+        }
+      ]
+    },
+    "5717_15408": {
+      "n": 1032,
+      "positives": 19,
+      "precision": 0.05660377358490566,
+      "recall": 0.15789473684210525,
+      "f1": 0.08333333333333333,
+      "pr_auc_average_precision": 0.03070138402779389,
+      "roc_auc": 0.5629448745259001,
+      "brier": 0.018133120059761355,
+      "log_loss": 0.09323399856761876,
+      "confusion_matrix_tn_fp_fn_tp": [
+        963,
+        50,
+        16,
+        3
+      ],
+      "threshold": 0.02512121212121212,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 1032,
+          "mean_prediction": 0.013026490977459965,
+          "observed_rate": 0.018410852713178296
+        }
+      ]
+    },
+    "5717_15411": {
+      "n": 288,
+      "positives": 3,
+      "note": "Too few positives for meaningful group metrics."
+    },
+    "5718_15405": {
+      "n": 480,
+      "positives": 15,
+      "precision": 0.08737864077669903,
+      "recall": 0.6,
+      "f1": 0.15254237288135594,
+      "pr_auc_average_precision": 0.08919100709772337,
+      "roc_auc": 0.7414336917562724,
+      "brier": 0.02994588259829149,
+      "log_loss": 0.132229556745493,
+      "confusion_matrix_tn_fp_fn_tp": [
+        371,
+        94,
+        6,
+        9
+      ],
+      "threshold": 0.02512121212121212,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 472,
+          "mean_prediction": 0.019674321803783246,
+          "observed_rate": 0.029661016949152543
+        },
+        {
+          "lower": 0.1,
+          "count": 6,
+          "mean_prediction": 0.1583263097354308,
+          "observed_rate": 0.16666666666666666
+        },
+        {
+          "lower": 0.2,
+          "count": 2,
+          "mean_prediction": 0.21865738116655759,
+          "observed_rate": 0.0
+        }
+      ]
+    },
+    "5718_15406": {
+      "n": 744,
+      "positives": 16,
+      "precision": 0.024390243902439025,
+      "recall": 0.125,
+      "f1": 0.04081632653061224,
+      "pr_auc_average_precision": 0.05400915100382468,
+      "roc_auc": 0.701880151098901,
+      "brier": 0.020921751753584055,
+      "log_loss": 0.10071704965997981,
+      "confusion_matrix_tn_fp_fn_tp": [
+        648,
+        80,
+        14,
+        2
+      ],
+      "threshold": 0.02512121212121212,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 744,
+          "mean_prediction": 0.015093882008025857,
+          "observed_rate": 0.021505376344086023
+        }
+      ]
+    },
+    "5718_15407": {
+      "n": 732,
+      "positives": 5,
+      "note": "Too few positives for meaningful group metrics."
+    },
+    "5718_15408": {
+      "n": 768,
+      "positives": 16,
+      "precision": 0.038461538461538464,
+      "recall": 0.125,
+      "f1": 0.058823529411764705,
+      "pr_auc_average_precision": 0.038217987212080876,
+      "roc_auc": 0.587890625,
+      "brier": 0.02040623055659042,
+      "log_loss": 0.10207990790053285,
+      "confusion_matrix_tn_fp_fn_tp": [
+        702,
+        50,
+        14,
+        2
+      ],
+      "threshold": 0.02512121212121212,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 768,
+          "mean_prediction": 0.01395188653236497,
+          "observed_rate": 0.020833333333333332
+        }
+      ]
+    },
+    "5719_15404": {
+      "n": 552,
+      "positives": 12,
+      "precision": 0.050505050505050504,
+      "recall": 0.4166666666666667,
+      "f1": 0.09009009009009009,
+      "pr_auc_average_precision": 0.046812051681036415,
+      "roc_auc": 0.6551697530864198,
+      "brier": 0.021192596331283606,
+      "log_loss": 0.10233828227673808,
+      "confusion_matrix_tn_fp_fn_tp": [
+        446,
+        94,
+        7,
+        5
+      ],
+      "threshold": 0.02512121212121212,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 551,
+          "mean_prediction": 0.01890131398523234,
+          "observed_rate": 0.021778584392014518
+        },
+        {
+          "lower": 0.1,
+          "count": 1,
+          "mean_prediction": 0.11913576916074618,
+          "observed_rate": 0.0
+        }
+      ]
+    },
+    "5720_15407": {
+      "n": 276,
+      "positives": 3,
+      "note": "Too few positives for meaningful group metrics."
+    },
+    "5720_15409": {
+      "n": 252,
+      "positives": 6,
+      "note": "Too few positives for meaningful group metrics."
+    },
+    "5720_15410": {
+      "n": 432,
+      "positives": 5,
+      "note": "Too few positives for meaningful group metrics."
+    },
+    "5721_15405": {
+      "n": 2592,
+      "positives": 38,
+      "precision": 0.00980392156862745,
+      "recall": 0.02631578947368421,
+      "f1": 0.014285714285714285,
+      "pr_auc_average_precision": 0.01936021114206808,
+      "roc_auc": 0.5665674071631702,
+      "brier": 0.0144471953785097,
+      "log_loss": 0.07643522185456468,
+      "confusion_matrix_tn_fp_fn_tp": [
+        2453,
+        101,
+        37,
+        1
+      ],
+      "threshold": 0.02512121212121212,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 2592,
+          "mean_prediction": 0.013534050266560868,
+          "observed_rate": 0.014660493827160493
+        }
+      ]
+    }
+  },
+  "uncertainty": "No calibrated real-world uncertainty; calibration bins describe synthetic test only."
+}

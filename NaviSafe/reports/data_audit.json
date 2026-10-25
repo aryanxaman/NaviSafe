@@ -1,0 +1,514 @@
+[
+  {
+    "file": "app_microreports_synthetic.csv",
+    "rows": 2500,
+    "columns": [
+      "report_id",
+      "data_origin",
+      "timestamp",
+      "latitude",
+      "longitude",
+      "report_type",
+      "reporter_id",
+      "_truth_edge_id"
+    ],
+    "sha256": "b1a06083beff5db8110fe68a05bd05d7a60ad6e8e8ba1fcb8af97acaa0cfb8f4",
+    "missing": {},
+    "duplicate_rows": 0,
+    "origin": {
+      "SYNTHETIC": 2500
+    },
+    "numeric_ranges": {
+      "latitude": {
+        "min": 28.5683268655936,
+        "max": 28.61201300898701,
+        "mean": 28.591506188508625
+      },
+      "longitude": {
+        "min": 77.01844874335428,
+        "max": 77.06197726283041,
+        "mean": 77.03760911982691
+      },
+      "_truth_edge_id": {
+        "min": 4.0,
+        "max": 3768.0,
+        "mean": 1967.9536
+      }
+    },
+    "retrieval_date": "Not recorded by legacy generator; do not infer from file modification time.",
+    "time_range": {
+      "min": "2026-01-19 19:13:00",
+      "max": "2026-10-04 23:48:00"
+    },
+    "bounds": [
+      77.01844874335428,
+      28.5683268655936,
+      77.06197726283041,
+      28.61201300898701
+    ]
+  },
+  {
+    "file": "edges_features.csv",
+    "rows": 3769,
+    "columns": [
+      "edge_id",
+      "u",
+      "v",
+      "mid_lat",
+      "mid_lon",
+      "lat1",
+      "lon1",
+      "lat2",
+      "lon2",
+      "length_m",
+      "highway",
+      "lit",
+      "dist_metro_m",
+      "dist_police_m",
+      "activity",
+      "isolated",
+      "shops_open_night",
+      "liquor_near",
+      "police_near",
+      "footfall_day",
+      "footfall_night",
+      "report_propensity",
+      "data_origin"
+    ],
+    "sha256": "011c71c363bb2ae3da3d457974ee84cb9a49af2f250ffbd3ee29b235c71b9cde",
+    "missing": {},
+    "duplicate_rows": 0,
+    "origin": {
+      "SYNTHETIC": 3769
+    },
+    "numeric_ranges": {
+      "edge_id": {
+        "min": 0.0,
+        "max": 3768.0,
+        "mean": 1884.0
+      },
+      "u": {
+        "min": 249824218.0,
+        "max": 14139637952.0,
+        "mean": 5283575071.390024
+      },
+      "v": {
+        "min": 249824234.0,
+        "max": 14166406091.0,
+        "mean": 7510129317.272221
+      },
+      "mid_lat": {
+        "min": 28.57004465,
+        "max": 28.6099966,
+        "mean": 28.590933362005835
+      },
+      "mid_lon": {
+        "min": 77.02001195,
+        "max": 77.05988775,
+        "mean": 77.03765603738393
+      },
+      "lat1": {
+        "min": 28.5700425,
+        "max": 28.6099947,
+        "mean": 28.59090304388432
+      },
+      "lon1": {
+        "min": 77.0200128,
+        "max": 77.0599317,
+        "mean": 77.0376715169541
+      },
+      "lat2": {
+        "min": 28.5700167,
+        "max": 28.6099985,
+        "mean": 28.590963680127356
+      },
+      "lon2": {
+        "min": 77.0200111,
+        "max": 77.0599459,
+        "mean": 77.03764055781375
+      },
+      "length_m": {
+        "min": 1.0863399759310082,
+        "max": 932.5503391716948,
+        "mean": 78.85420327418963
+      },
+      "lit": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.6365083576545503
+      },
+      "dist_metro_m": {
+        "min": 33.17326951823921,
+        "max": 3562.154121918581,
+        "mean": 1514.0059679384035
+      },
+      "dist_police_m": {
+        "min": 14.561571553347736,
+        "max": 3193.8180672332333,
+        "mean": 1339.2228074899444
+      },
+      "activity": {
+        "min": 0.0013799682280582,
+        "max": 0.9544096897736912,
+        "mean": 0.11475865863172406
+      },
+      "isolated": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.5899316094314656
+      },
+      "shops_open_night": {
+        "min": 0.0,
+        "max": 0.6746809318632208,
+        "mean": 0.0670254590641627
+      },
+      "liquor_near": {
+        "min": 9.97716255930526e-06,
+        "max": 0.9013585434762692,
+        "mean": 0.04012472288452798
+      },
+      "police_near": {
+        "min": 0.0048779505721252,
+        "max": 0.9760228451546384,
+        "mean": 0.19253209284106426
+      },
+      "footfall_day": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.2912771118202042
+      },
+      "footfall_night": {
+        "min": 0.0,
+        "max": 0.7356668226416926,
+        "mean": 0.10735659780423992
+      },
+      "report_propensity": {
+        "min": 0.5011039745824466,
+        "max": 1.2635277518189532,
+        "mean": 0.5918069269053793
+      }
+    },
+    "retrieval_date": "Not recorded by legacy generator; do not infer from file modification time."
+  },
+  {
+    "file": "ground_truth_edge_risk.csv",
+    "rows": 3769,
+    "columns": [
+      "edge_id",
+      "true_risk_00_04",
+      "true_risk_04_08",
+      "true_risk_08_12",
+      "true_risk_12_16",
+      "true_risk_16_20",
+      "true_risk_20_24"
+    ],
+    "sha256": "5a2f0d74d82676fac1a3662d327a05f2b6a9d9d70b4ec0add85d9f004f3a2c38",
+    "missing": {},
+    "duplicate_rows": 0,
+    "origin": "Derived synthetic/evaluation-only artifact",
+    "numeric_ranges": {
+      "edge_id": {
+        "min": 0.0,
+        "max": 3768.0,
+        "mean": 1884.0
+      },
+      "true_risk_00_04": {
+        "min": 0.0123,
+        "max": 0.9249,
+        "mean": 0.35366293446537544
+      },
+      "true_risk_04_08": {
+        "min": 0.0076,
+        "max": 0.3192,
+        "mean": 0.126390581055983
+      },
+      "true_risk_08_12": {
+        "min": 0.0085,
+        "max": 0.1947,
+        "mean": 0.07816460599628548
+      },
+      "true_risk_12_16": {
+        "min": 0.0127,
+        "max": 0.376,
+        "mean": 0.12995078270098168
+      },
+      "true_risk_16_20": {
+        "min": 0.0184,
+        "max": 0.8782,
+        "mean": 0.3001325815866278
+      },
+      "true_risk_20_24": {
+        "min": 0.0188,
+        "max": 1.0,
+        "mean": 0.49821979304855407
+      }
+    },
+    "retrieval_date": "Not recorded by legacy generator; do not infer from file modification time."
+  },
+  {
+    "file": "ncrb_synthetic.csv",
+    "rows": 25,
+    "columns": [
+      "city",
+      "year",
+      "crime_head",
+      "section",
+      "cases_reported",
+      "data_origin"
+    ],
+    "sha256": "fc5e13b50e9ef07403a37ec95db0500da3cea42bc51d7949454be419d002ed68",
+    "missing": {},
+    "duplicate_rows": 0,
+    "origin": {
+      "SYNTHETIC": 25
+    },
+    "numeric_ranges": {
+      "year": {
+        "min": 2022.0,
+        "max": 2026.0,
+        "mean": 2024.0
+      },
+      "cases_reported": {
+        "min": 58.0,
+        "max": 2019.0,
+        "mean": 854.16
+      }
+    },
+    "retrieval_date": "Not recorded by legacy generator; do not infer from file modification time."
+  },
+  {
+    "file": "risk_table.csv",
+    "rows": 22614,
+    "columns": [
+      "edge_id",
+      "bucket",
+      "p_ml"
+    ],
+    "sha256": "715488b428272ad8134ca98a453cc77f9f004cb77cf80ac6a174b61a60c0bbf8",
+    "missing": {},
+    "duplicate_rows": 0,
+    "origin": "Derived synthetic/evaluation-only artifact",
+    "numeric_ranges": {
+      "edge_id": {
+        "min": 0.0,
+        "max": 3768.0,
+        "mean": 1884.0
+      },
+      "bucket": {
+        "min": 0.0,
+        "max": 5.0,
+        "mean": 2.5
+      },
+      "p_ml": {
+        "min": 0.0185031534312181,
+        "max": 0.8515456459857177,
+        "mean": 0.21513532616365263
+      }
+    },
+    "retrieval_date": "Not recorded by legacy generator; do not infer from file modification time."
+  },
+  {
+    "file": "safecity_synthetic.csv",
+    "rows": 6120,
+    "columns": [
+      "report_id",
+      "data_origin",
+      "timestamp",
+      "latitude",
+      "longitude",
+      "category",
+      "severity",
+      "location_confidence",
+      "reporter_id",
+      "_truth_edge_id",
+      "_truth_is_spam"
+    ],
+    "sha256": "e39b6da4fdfe9881ed575b8c4d1524d044c6d4be65c4ab4639a4b17fc7e9f5e5",
+    "missing": {},
+    "duplicate_rows": 0,
+    "origin": {
+      "SYNTHETIC": 6120
+    },
+    "numeric_ranges": {
+      "latitude": {
+        "min": 28.56713475479788,
+        "max": 28.61319132884169,
+        "mean": 28.592280690814626
+      },
+      "longitude": {
+        "min": 77.01833900715589,
+        "max": 77.06322956094927,
+        "mean": 77.03679196805847
+      },
+      "severity": {
+        "min": 1.0,
+        "max": 5.0,
+        "mean": 2.462091503267974
+      },
+      "_truth_edge_id": {
+        "min": 0.0,
+        "max": 3768.0,
+        "mean": 2076.7705882352943
+      }
+    },
+    "retrieval_date": "Not recorded by legacy generator; do not infer from file modification time.",
+    "time_range": {
+      "min": "2024-10-07 03:13:00",
+      "max": "2026-10-05 23:44:00"
+    },
+    "categories": {
+      "Commenting": 1275,
+      "Stalking / Following": 1246,
+      "Touching / Groping": 1049,
+      "Staring / Ogling": 961,
+      "Catcalling / Whistling": 881,
+      "Sexual invites": 402,
+      "Taking pictures": 306
+    },
+    "bounds": [
+      77.01833900715589,
+      28.56713475479788,
+      77.06322956094927,
+      28.61319132884169
+    ]
+  },
+  {
+    "file": "safetipin_synthetic.csv",
+    "rows": 1200,
+    "columns": [
+      "audit_id",
+      "data_origin",
+      "timestamp",
+      "latitude",
+      "longitude",
+      "lighting",
+      "openness",
+      "visibility",
+      "people",
+      "security",
+      "walk_path",
+      "public_transport",
+      "gender_diversity",
+      "feeling",
+      "safety_score",
+      "time_of_day",
+      "_truth_edge_id"
+    ],
+    "sha256": "a19423e80991ac53275b14521a7880127acf03065a9fa356a833d20ce5b6c288",
+    "missing": {},
+    "duplicate_rows": 0,
+    "origin": {
+      "SYNTHETIC": 1200
+    },
+    "numeric_ranges": {
+      "latitude": {
+        "min": 28.569848937123695,
+        "max": 28.61238568768904,
+        "mean": 28.591187142422786
+      },
+      "longitude": {
+        "min": 77.0184639929103,
+        "max": 77.0612525949349,
+        "mean": 77.03864777805855
+      },
+      "lighting": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 2.335
+      },
+      "openness": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 1.6575
+      },
+      "visibility": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 1.95
+      },
+      "people": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 0.7316666666666667
+      },
+      "security": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 1.0175
+      },
+      "walk_path": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 1.8175
+      },
+      "public_transport": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 0.6633333333333333
+      },
+      "gender_diversity": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 1.055
+      },
+      "feeling": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 1.6225
+      },
+      "safety_score": {
+        "min": 0.33,
+        "max": 2.56,
+        "mean": 1.427725
+      },
+      "_truth_edge_id": {
+        "min": 0.0,
+        "max": 3758.0,
+        "mean": 1657.1783333333333
+      }
+    },
+    "retrieval_date": "Not recorded by legacy generator; do not infer from file modification time.",
+    "time_range": {
+      "min": "2024-10-07 22:00:00",
+      "max": "2026-10-05 22:00:00"
+    },
+    "bounds": [
+      77.0184639929103,
+      28.569848937123695,
+      77.0612525949349,
+      28.61238568768904
+    ]
+  },
+  {
+    "file": "user_reports.csv",
+    "rows": 2,
+    "columns": [
+      "timestamp",
+      "street",
+      "category",
+      "description",
+      "file_path"
+    ],
+    "sha256": "1dfbb2b00dff7cc502a283b609261ef42cb6d481f9c08f23e7ba2f43dc76b5c8",
+    "missing": {
+      "description": 2
+    },
+    "duplicate_rows": 0,
+    "origin": "Unreviewed legacy user input",
+    "numeric_ranges": {
+      "description": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN
+      }
+    },
+    "retrieval_date": "Not recorded by legacy generator; do not infer from file modification time.",
+    "time_range": {
+      "min": "2026-10-05 14:36:20",
+      "max": "2026-10-05 14:37:58"
+    },
+    "categories": {
+      "harassment": 2
+    }
+  }
+]

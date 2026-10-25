@@ -1,0 +1,48 @@
+{
+  "version": "delhi-v3",
+  "seed": 42,
+  "origin": "SYNTHETIC",
+  "retrieval_date": null,
+  "input_hashes": {
+    "edges_features.csv": "011c71c363bb2ae3da3d457974ee84cb9a49af2f250ffbd3ee29b235c71b9cde",
+    "safecity_synthetic.csv": "e39b6da4fdfe9881ed575b8c4d1524d044c6d4be65c4ab4639a4b17fc7e9f5e5",
+    "app_microreports_synthetic.csv": "b1a06083beff5db8110fe68a05bd05d7a60ad6e8e8ba1fcb8af97acaa0cfb8f4"
+  },
+  "feature_allowlist": [
+    "length_m",
+    "lit",
+    "dist_metro_m",
+    "dist_police_m",
+    "isolated",
+    "shops_open_night",
+    "liquor_near",
+    "police_near",
+    "footfall_day",
+    "footfall_night",
+    "bucket",
+    "prior_90d_count"
+  ],
+  "python": "3.14.0",
+  "coverage": {
+    "name": "Dwarka study network",
+    "bounds": [
+      77.02001195,
+      28.57004465,
+      77.05988775,
+      28.6099966
+    ]
+  },
+  "transformations": [
+    "combine compatible synthetic report sources",
+    "deduplicate observations",
+    "project to UTM 43N",
+    "snap to straight segment <=150m",
+    "prior 90 day counts strictly before snapshot",
+    "next 30 day reported-occurrence target",
+    "disjoint time and location splits",
+    "class-balanced training only",
+    "fit imputer and scaler on training only"
+  ],
+  "target": "At least one synthetic reported observation on a segment/time bucket in the next 30 days; includes reporting bias and synthetic spam; not harm.",
+  "generation": "Existing scenario generator; original seed/retrieval timestamp not recorded. New runs record full configs separately."
+}

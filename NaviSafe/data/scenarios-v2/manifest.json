@@ -1,0 +1,37 @@
+{
+  "version": "scenario-generator-v2",
+  "generated_at": "2026-10-20T17:33:04.190338+00:00",
+  "configuration": {
+    "area": "dwarka",
+    "n_reports": 120,
+    "n_audits": 40,
+    "n_micro": 50,
+    "months": 3,
+    "end_date": "2026-10-05",
+    "offline": true,
+    "seed": 42,
+    "out": "data/scenarios-v2"
+  },
+  "seed": 42,
+  "data_origin": "SYNTHETIC",
+  "geographic_coverage": {
+    "north": 28.61,
+    "south": 28.57,
+    "east": 77.06,
+    "west": 77.02
+  },
+  "graph_source": "fallback_grid",
+  "source_url": null,
+  "graph_license": "Synthetic grid",
+  "retrieval_date": null,
+  "feature_provenance": "Synthetic POI locations, lighting fills, activity and footfall proxies; not measured Delhi conditions.",
+  "label_meaning": "Generated scenarios, never actual crime reports or independently verified observations.",
+  "files": {
+    "app_microreports_synthetic.csv": "0666eb7e35bbe780be3acecb817e51e0326dfe067d4936bc6382f0156d343330",
+    "edges_features.csv": "6dddba28d386ab72e79e6b5614c043d6d37da1cb0b3b20f9d7db0425b48b0688",
+    "ground_truth_edge_risk.csv": "20f6655ce489d54a9a34763eb4364615ffa3ec90887099ad9d48739a440222fb",
+    "ncrb_synthetic.csv": "d30fe082f7f793c9f1d0f68b8a0ddc022487c12bd2739cf37a63971b9bd12c24",
+    "safecity_synthetic.csv": "629e4c065203deee695acaa219a33cd8ead5279910ef1edd83a716e55e04dae2",
+    "safetipin_synthetic.csv": "909d8a312fb17052bcaead88f0203dc6b1458b3509c3f18ba8fe78746d3ff2ff"
+  }
+}
